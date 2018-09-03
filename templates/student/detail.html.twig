@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}student.fullname!{% endblock %}
+
+{% block body %}
+
+<div class="container">    
+<h1>Showing {{ student.fullname }}</h1>
+<nav class="navbar navbar-inverse">        
+    <ul class="nav navbar-nav">
+        <li><a href="/students">View All Student</a></li>
+        <li><a href="/students/create">Create a Student</a>
+    </ul>
+</nav>
+
+    <div class="jumbotron text-center">
+        <h2>{{ student.fullname }}</h2>
+        <p>
+            <strong>Email:</strong> {{ student.fullname }}<br>
+            <strong>Date of Birth:</strong> {{ student.dateofbirth|date('d/m/Y') }}<br>
+        </p>
+    </div>
+
+</div>
+{% endblock %}

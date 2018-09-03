@@ -1,0 +1,72 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+homepage:
+    path: /
+    controller: App\Controller\HomeController::index
+
+loginpage:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+registerpage:
+    path: /register
+    controller: App\Controller\SecurityController::register
+
+user_list:
+    path: /users
+    controller: App\Controller\UserController::index
+
+user_detail:
+    path: /user/{id<\d+>}
+    controller: App\Controller\UserController::detail
+
+user_create:
+    path: /users/create
+    controller: App\Controller\UserController::create
+user_edit:
+    path: /user/{id<\d+>}/edit
+    controller: App\Controller\UserController::edit
+
+user_delete:
+    path: /user/{id<\d+>}/delete
+    controller: App\Controller\UserController::delete
+
+teacher_list:
+    path: /teachers
+    controller: App\Controller\TeacherController::index
+
+teacher_detail:
+    path: /teacher/{id<\d+>}
+    controller: App\Controller\TeacherController::detail
+
+teacher_create:
+    path: /teacher/create
+    controller: App\Controller\TeacherController::create
+teacher_edit:
+    path: /teacher/{id<\d+>}/edit
+    controller: App\Controller\TeacherController::edit
+
+teacher_delete:
+    path: /teacher/{id<\d+>}/delete
+    controller: App\Controller\TeacherController::delete
+
+student_list:
+    path: /students
+    controller: App\Controller\StudentController::index
+
+student_detail:
+    path: /student/{id<\d+>}
+    controller: App\Controller\StudentController::detail
+
+student_create:
+    path: /student/create
+    controller: App\Controller\StudentController::create
+student_edit:
+    path: /student/{id<\d+>}/edit
+    controller: App\Controller\StudentController::edit
+
+student_delete:
+    path: /student/{id<\d+>}/delete
+    controller: App\Controller\StudentController::delete

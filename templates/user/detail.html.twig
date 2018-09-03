@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}user.username!{% endblock %}
+
+{% block body %}
+
+<div class="container">    
+<h1>Showing {{ user.username }}</h1>
+<nav class="navbar navbar-inverse">        
+    <ul class="nav navbar-nav">
+        <li><a href="/users">View All user</a></li>
+        <li><a href="/users/create">Create a user</a>
+    </ul>
+</nav>
+
+    <div class="jumbotron text-center">
+        <h2>{{ user.username }}</h2>
+        <p>
+            <strong>Email:</strong> {{ user.username }}<br>
+            <strong>Date of Birth:</strong> {{ user.email }}<br>
+        </p>
+    </div>
+
+</div>
+{% endblock %}
